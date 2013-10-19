@@ -1,0 +1,36 @@
+---
+abstract: 'Dist::Zilla like SHARYANTO when you build your dists'
+author:
+  - 'Steven Haryanto <stevenharyanto@gmail.com>'
+build_requires:
+  File::Spec: 0
+  IO::Handle: 0
+  IPC::Open3: 0
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132140'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dist-Zilla-PluginBundle-Author-SHARYANTO
+requires:
+  Dist::Zilla: 0
+  Dist::Zilla::Plugin::CheckChangeLog: 0
+  Dist::Zilla::Plugin::Extras: 0
+  Dist::Zilla::Plugin::InstallRelease: 0
+  Dist::Zilla::Plugin::OurPkgVersion: 0
+  Dist::Zilla::Plugin::PodWeaver: 0
+  Dist::Zilla::Plugin::ReadmeFromPod: 0
+  Dist::Zilla::Plugin::Rinci::Validate: 0.01
+  Dist::Zilla::Plugin::Run::Release: 0
+  Dist::Zilla::Plugin::TaskWeaver: 0
+  Dist::Zilla::Plugin::Test::Compile: 2.033
+  Dist::Zilla::Plugin::Test::Rinci: 0.01
+  Pod::Weaver::Plugin::Perinci: 0
+resources:
+  homepage: http://search.cpan.org/dist/Dist-Zilla-PluginBundle-Author-SHARYANTO/
+  repository: http://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO
+version: 0.10
