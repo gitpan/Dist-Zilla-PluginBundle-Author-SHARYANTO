@@ -9,9 +9,9 @@ use Test::More  tests => 4 + ($ENV{AUTHOR_TESTING} ? 1 : 0);
 
 my @module_files = (
     'Dist/Zilla/PluginBundle/Author/SHARYANTO.pm',
-    'Dist/Zilla/PluginBundle/Author/SHARYANTO/Private.pm',
-    'Dist/Zilla/PluginBundle/Author/SHARYANTO/Task.pm',
-    'Dist/Zilla/PluginBundle/Author/SHARYANTO/Task/Private.pm'
+    'Dist/Zilla/PluginBundle/Author/SHARYANTO/NonCPAN.pm',
+    'Dist/Zilla/PluginBundle/Author/SHARYANTO/NonCPAN/Task.pm',
+    'Dist/Zilla/PluginBundle/Author/SHARYANTO/Task.pm'
 );
 
 

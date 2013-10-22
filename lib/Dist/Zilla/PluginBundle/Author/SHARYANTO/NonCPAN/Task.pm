@@ -1,4 +1,4 @@
-package Dist::Zilla::PluginBundle::Author::SHARYANTO::Task;
+package Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN::Task;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -11,19 +11,15 @@ sub configure {
     my $self = shift;
 
     $self->add_bundle(Filter => {
-        -bundle => '@Author::SHARYANTO',
-        -remove => [qw/PodCoverageTests PodSyntaxTests PodWeaver/],
+        -bundle => '@Author::SHARYANTO::Task',
+        -remove => [qw/ConfirmRelease MetaJSON MetaYAML UploadToCPAN/],
     });
-
-    $self->add_plugins(
-        'TaskWeaver',
-    );
 }
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
-# ABSTRACT: Dist::Zilla like SHARYANTO when you build your task dists
+# ABSTRACT: Dist::Zilla like SHARYANTO when you build your non-CPAN task dists
 
 __END__
 
@@ -33,22 +29,21 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::PluginBundle::Author::SHARYANTO::Task - Dist::Zilla like SHARYANTO when you build your task dists
+Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN::Task - Dist::Zilla like SHARYANTO when you build your non-CPAN task dists
 
 =head1 SYNOPSIS
 
  # dist.ini
- [@Author::SHARYANTO::Task]
+ [@Author::SHARYANTO::NonCPAN::Task]
 
 is equivalent to:
 
  [@Filter]
- bundle=@Author::SHARYANTO
- remove=PodCoverageTests
- remove=PodSyntaxTests
- remove=PodWeaver
-
- [TaskWeaver]
+ bundle=@Author::SHARYANTO::Task
+ remove=ConfirmRelease
+ remove=MetaJSON
+ remove=MetaYAML
+ remove=UploadToCPAN
 
 =head1 DESCRIPTION
 

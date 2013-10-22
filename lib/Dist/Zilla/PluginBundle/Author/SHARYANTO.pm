@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.10'; # VERSION
+our $VERSION = '0.11'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -40,13 +40,11 @@ __END__
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like SHARYANTO when you build your dists
-
-=head1 VERSION
-
-version 0.10
 
 =head1 SYNOPSIS
 
@@ -93,6 +91,25 @@ script on my computer, you can get them from my 'scripts' github repo but this
 is optional and the release process won't fail if the script does not exist.
 
 =for Pod::Coverage ^(configure)$
+
+=head1 HOMEPAGE
+
+Please visit the project's homepage at
+L<https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO>.
+
+=head1 SOURCE
+
+Source repository is at L<https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO>.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-Au
+thor-SHARYANTO
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 AUTHOR
 

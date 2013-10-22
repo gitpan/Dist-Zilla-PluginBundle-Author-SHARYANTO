@@ -54,12 +54,7 @@
       }
    },
    "release_status" : "stable",
-   "resources" : {
-      "homepage" : "http://search.cpan.org/dist/Dist-Zilla-PluginBundle-Author-SHARYANTO/",
-      "repository" : {
-         "url" : "http://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO"
-      }
-   },
-   "version" : "0.10"
+   "resources" : {},
+   "version" : "0.11"
 }
 
