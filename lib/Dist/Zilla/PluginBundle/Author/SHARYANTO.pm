@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.11'; # VERSION
+our $VERSION = '0.12'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -16,15 +16,16 @@ sub configure {
     });
 
     $self->add_plugins(
+        'Author::SHARYANTO::MetaResources',
         'CheckChangeLog',
+        'CheckMetaResources',
         'MetaJSON',
         'OurPkgVersion',
         'PodWeaver',
         'ReadmeFromPod',
-        'Test::Compile',
-
-        'Test::Rinci',
         'Rinci::Validate',
+        'Test::Compile',
+        'Test::Rinci',
 
         [InstallRelease => {install_command => 'cpanm -n .'}],
         ['Run::Release' => {run => 'archive-perl-release %s'}],
@@ -46,33 +47,16 @@ __END__
 
 Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like SHARYANTO when you build your dists
 
+=head1 VERSION
+
+version 0.12
+
 =head1 SYNOPSIS
 
  # dist.ini
  [@Author::SHARYANTO]
 
-is equivalent to:
-
- [@Filter]
- bundle=@Classic
- remove=PkgVersion
- remove=PodVersion
- remove=Readme
-
- [CheckChangeLog]
- [MetaJSON]
- [OurPkgVersion]
- [PodWeaver]
- [ReadmeFromPod]
- [Test::Compile]
- [Test::Rinci]
-
- [InstallRelease]
- install_command=cpanm -n .
-
- [Run::Release]
- ;notexist_fatal = 0
- run=archive-perl-release %s
+is equivalent to (see source).
 
 =head1 DESCRIPTION
 
@@ -94,18 +78,17 @@ is optional and the release process won't fail if the script does not exist.
 
 =head1 HOMEPAGE
 
-Please visit the project's homepage at
-L<https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO>.
+Please visit the project's homepage at L<https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO>.
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO>.
+Source repository is at L<HASH(0x36b7908)>.
 
 =head1 BUGS
 
 Please report any bugs or feature requests on the bugtracker website
-http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-Au
-thor-SHARYANTO
+https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-A
+uthor-SHARYANTO
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired

@@ -2,32 +2,14 @@ NAME
     Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like
     SHARYANTO when you build your dists
 
+VERSION
+    version 0.12
+
 SYNOPSIS
      # dist.ini
      [@Author::SHARYANTO]
 
-    is equivalent to:
-
-     [@Filter]
-     bundle=@Classic
-     remove=PkgVersion
-     remove=PodVersion
-     remove=Readme
-
-     [CheckChangeLog]
-     [MetaJSON]
-     [OurPkgVersion]
-     [PodWeaver]
-     [ReadmeFromPod]
-     [Test::Compile]
-     [Test::Rinci]
-
-     [InstallRelease]
-     install_command=cpanm -n .
-
-     [Run::Release]
-     ;notexist_fatal = 0
-     run=archive-perl-release %s
+    is equivalent to (see source).
 
 DESCRIPTION
     The gist:
@@ -50,14 +32,12 @@ HOMEPAGE
     <https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO>.
 
 SOURCE
-    Source repository is at
-    <https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYA
-    NTO>.
+    Source repository is at HASH(0x36b7908).
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
-    http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle
-    -Au thor-SHARYANTO
+    https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundl
+    e-A uthor-SHARYANTO
 
     When submitting a bug or request, please include a test-file or a patch
     to an existing test-file that illustrates the bug or desired feature.

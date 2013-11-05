@@ -4,7 +4,7 @@
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Dist::Zilla version 5.001, CPAN::Meta::Converter version 2.132140",
    "license" : [
       "perl_5"
    ],
@@ -30,7 +30,9 @@
       "runtime" : {
          "requires" : {
             "Dist::Zilla" : "0",
+            "Dist::Zilla::Plugin::Author::SHARYANTO::MetaResources" : "0",
             "Dist::Zilla::Plugin::CheckChangeLog" : "0",
+            "Dist::Zilla::Plugin::CheckMetaResources" : "0",
             "Dist::Zilla::Plugin::Extras" : "0",
             "Dist::Zilla::Plugin::InstallRelease" : "0",
             "Dist::Zilla::Plugin::OurPkgVersion" : "0",
@@ -54,7 +56,17 @@
       }
    },
    "release_status" : "stable",
-   "resources" : {},
-   "version" : "0.11"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-Author-SHARYANTO"
+      },
+      "homepage" : "https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO.git",
+         "web" : "https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO"
+      }
+   },
+   "version" : "0.12"
 }
 
