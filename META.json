@@ -4,7 +4,7 @@
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.001, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Dist::Zilla version 4.300038, CPAN::Meta::Converter version 2.132510",
    "license" : [
       "perl_5"
    ],
@@ -29,6 +29,7 @@
       },
       "runtime" : {
          "requires" : {
+            "App::norepeat" : "0",
             "Dist::Zilla" : "0",
             "Dist::Zilla::Plugin::Author::SHARYANTO::MetaResources" : "0",
             "Dist::Zilla::Plugin::CheckChangeLog" : "0",
@@ -39,11 +40,10 @@
             "Dist::Zilla::Plugin::PodWeaver" : "0",
             "Dist::Zilla::Plugin::ReadmeFromPod" : "0",
             "Dist::Zilla::Plugin::Rinci::Validate" : "0.01",
-            "Dist::Zilla::Plugin::Run::Release" : "0",
+            "Dist::Zilla::Plugin::Run" : "0",
             "Dist::Zilla::Plugin::TaskWeaver" : "0",
             "Dist::Zilla::Plugin::Test::Compile" : "2.033",
-            "Dist::Zilla::Plugin::Test::Rinci" : "0.01",
-            "Pod::Weaver::Plugin::Perinci" : "0"
+            "Dist::Zilla::Plugin::Test::Rinci" : "0.01"
          }
       },
       "test" : {
@@ -67,6 +67,6 @@
          "web" : "https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO"
       }
    },
-   "version" : "0.12"
+   "version" : "0.13"
 }
 

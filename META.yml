@@ -10,13 +10,14 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.001, CPAN::Meta::Converter version 2.132140'
+generated_by: 'Dist::Zilla version 4.300038, CPAN::Meta::Converter version 2.132510'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Dist-Zilla-PluginBundle-Author-SHARYANTO
 requires:
+  App::norepeat: 0
   Dist::Zilla: 0
   Dist::Zilla::Plugin::Author::SHARYANTO::MetaResources: 0
   Dist::Zilla::Plugin::CheckChangeLog: 0
@@ -27,13 +28,12 @@ requires:
   Dist::Zilla::Plugin::PodWeaver: 0
   Dist::Zilla::Plugin::ReadmeFromPod: 0
   Dist::Zilla::Plugin::Rinci::Validate: 0.01
-  Dist::Zilla::Plugin::Run::Release: 0
+  Dist::Zilla::Plugin::Run: 0
   Dist::Zilla::Plugin::TaskWeaver: 0
   Dist::Zilla::Plugin::Test::Compile: 2.033
   Dist::Zilla::Plugin::Test::Rinci: 0.01
-  Pod::Weaver::Plugin::Perinci: 0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-Author-SHARYANTO
   homepage: https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO
   repository: git://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO.git
-version: 0.12
+version: 0.13

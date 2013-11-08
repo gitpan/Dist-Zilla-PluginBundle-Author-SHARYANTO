@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.12'; # VERSION
+our $VERSION = '0.13'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -28,6 +28,8 @@ sub configure {
         'Test::Rinci',
 
         [InstallRelease => {install_command => 'cpanm -n .'}],
+        # to help make sure that I have the latest plugins
+        ['Run::BeforeBuild' => {run => 'norepeat -p daily -- cpanm -n --reinstall Dist::Zilla::PluginBundle::Author::SHARYANTO Pod::Weaver::PluginBundle::Author::SHARYANTO'}],
         ['Run::Release' => {run => 'archive-perl-release %s'}],
     );
 }
@@ -49,7 +51,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like SHARYANTO when y
 
 =head1 VERSION
 
-version 0.12
+version 0.13
 
 =head1 SYNOPSIS
 
@@ -74,6 +76,11 @@ archive them using a script called C<archive-perl-release>. This is currently a
 script on my computer, you can get them from my 'scripts' github repo but this
 is optional and the release process won't fail if the script does not exist.
 
+=head1 FUNCTIONS
+
+
+None are exported by default, but they are exportable.
+
 =for Pod::Coverage ^(configure)$
 
 =head1 HOMEPAGE
@@ -82,13 +89,13 @@ Please visit the project's homepage at L<https://metacpan.org/release/Dist-Zilla
 
 =head1 SOURCE
 
-Source repository is at L<HASH(0x36b7908)>.
+Source repository is at L<https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO>.
 
 =head1 BUGS
 
 Please report any bugs or feature requests on the bugtracker website
-https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-A
-uthor-SHARYANTO
+L<https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle
+-Author-SHARYANTO>
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired

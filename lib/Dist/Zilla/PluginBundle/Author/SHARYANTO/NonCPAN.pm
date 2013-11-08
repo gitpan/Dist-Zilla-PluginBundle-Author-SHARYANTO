@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.12'; # VERSION
+our $VERSION = '0.13'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -33,7 +33,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN - Dist::Zilla like SHARYAN
 
 =head1 VERSION
 
-version 0.12
+version 0.13
 
 =head1 SYNOPSIS
 
@@ -51,6 +51,11 @@ is equivalent to:
 
 =head1 DESCRIPTION
 
+=head1 FUNCTIONS
+
+
+None are exported by default, but they are exportable.
+
 =for Pod::Coverage ^(configure)$
 
 =head1 HOMEPAGE
@@ -59,13 +64,13 @@ Please visit the project's homepage at L<https://metacpan.org/release/Dist-Zilla
 
 =head1 SOURCE
 
-Source repository is at L<HASH(0x36b7908)>.
+Source repository is at L<https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO>.
 
 =head1 BUGS
 
 Please report any bugs or feature requests on the bugtracker website
-https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-A
-uthor-SHARYANTO
+L<https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle
+-Author-SHARYANTO>
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired

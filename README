@@ -3,7 +3,7 @@ NAME
     SHARYANTO when you build your dists
 
 VERSION
-    version 0.12
+    version 0.13
 
 SYNOPSIS
      # dist.ini
@@ -27,17 +27,22 @@ DESCRIPTION
     github repo but this is optional and the release process won't fail if
     the script does not exist.
 
+FUNCTIONS
+    None are exported by default, but they are exportable.
+
 HOMEPAGE
     Please visit the project's homepage at
     <https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO>.
 
 SOURCE
-    Source repository is at HASH(0x36b7908).
+    Source repository is at
+    <https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYA
+    NTO>.
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
-    https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundl
-    e-A uthor-SHARYANTO
+    "/rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle
+    -Author-SHARYANTO" in https:
 
     When submitting a bug or request, please include a test-file or a patch
     to an existing test-file that illustrates the bug or desired feature.
