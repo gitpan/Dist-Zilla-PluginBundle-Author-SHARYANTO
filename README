@@ -3,7 +3,7 @@ NAME
     SHARYANTO when you build your dists
 
 VERSION
-    version 0.14
+    version 0.15
 
 SYNOPSIS
      # dist.ini
@@ -41,8 +41,8 @@ SOURCE
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
-    "/rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle
-    -Author-SHARYANTO" in https:
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBund
+    le-Author-SHARYANTO>
 
     When submitting a bug or request, please include a test-file or a patch
     to an existing test-file that illustrates the bug or desired feature.

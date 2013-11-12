@@ -37,4 +37,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-Author-SHARYANTO
   homepage: https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO
   repository: git://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO.git
-version: 0.14
+version: 0.15
