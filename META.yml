@@ -24,6 +24,7 @@ requires:
   Dist::Zilla::Plugin::CheckMetaResources: 0
   Dist::Zilla::Plugin::Extras: 0
   Dist::Zilla::Plugin::InstallRelease: 0
+  Dist::Zilla::Plugin::LogBuild: 0
   Dist::Zilla::Plugin::OurPkgVersion: 0
   Dist::Zilla::Plugin::PodWeaver: 0
   Dist::Zilla::Plugin::ReadmeFromPod: 0
@@ -36,4 +37,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-PluginBundle-Author-SHARYANTO
   homepage: https://metacpan.org/release/Dist-Zilla-PluginBundle-Author-SHARYANTO
   repository: git://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO.git
-version: 0.13
+version: 0.14
