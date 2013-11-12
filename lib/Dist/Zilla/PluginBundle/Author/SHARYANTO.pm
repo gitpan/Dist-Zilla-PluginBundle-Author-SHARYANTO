@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.15'; # VERSION
+our $VERSION = '0.16'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -19,8 +19,9 @@ sub configure {
         'Author::SHARYANTO::MetaResources',
         'CheckChangeLog',
         'CheckMetaResources',
-        'LogBuild',
         'MetaJSON',
+        'MetaConfig',
+        'MetaConfig::PodWeaver',
         'OurPkgVersion',
         'PodWeaver',
         'ReadmeFromPod',
@@ -52,7 +53,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like SHARYANTO when y
 
 =head1 VERSION
 
-version 0.15
+version 0.16
 
 =head1 SYNOPSIS
 
