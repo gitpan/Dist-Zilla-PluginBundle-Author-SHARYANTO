@@ -27,7 +27,6 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::CheckMetaResources" => 0,
     "Dist::Zilla::Plugin::Extras" => 0,
     "Dist::Zilla::Plugin::InstallRelease" => 0,
-    "Dist::Zilla::Plugin::MetaConfig::PodWeaver" => 0,
     "Dist::Zilla::Plugin::OurPkgVersion" => 0,
     "Dist::Zilla::Plugin::PodWeaver" => 0,
     "Dist::Zilla::Plugin::ReadmeFromPod" => 0,
@@ -43,7 +42,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.16",
+  "VERSION" => "0.17",
   "test" => {
     "TESTS" => "t/*.t"
   }
