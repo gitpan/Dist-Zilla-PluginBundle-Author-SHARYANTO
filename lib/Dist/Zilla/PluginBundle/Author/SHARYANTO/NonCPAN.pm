@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.18'; # VERSION
+our $VERSION = '0.19'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -33,7 +33,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO::NonCPAN - Dist::Zilla like SHARYAN
 
 =head1 VERSION
 
-version 0.18
+version 0.19
 
 =head1 SYNOPSIS
 

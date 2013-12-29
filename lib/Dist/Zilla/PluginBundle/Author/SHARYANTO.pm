@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.18'; # VERSION
+our $VERSION = '0.19'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -30,7 +30,7 @@ sub configure {
 
         [InstallRelease => {install_command => 'cpanm -n .'}],
         # to help make sure that I have the latest plugins
-        ['Run::BeforeBuild' => {run => 'exec-if-env OFFLINE norepeat -p daily -- cpanm -n --reinstall Dist::Zilla::PluginBundle::Author::SHARYANTO Pod::Weaver::PluginBundle::Author::SHARYANTO'}],
+        ['Run::BeforeBuild' => {run => 'exec-if-not-env OFFLINE norepeat -p daily -- cpanm -n --reinstall Dist::Zilla::PluginBundle::Author::SHARYANTO Pod::Weaver::PluginBundle::Author::SHARYANTO'}],
         ['Run::Release' => {run => 'archive-perl-release %s'}],
     );
 }
@@ -52,7 +52,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like SHARYANTO when y
 
 =head1 VERSION
 
-version 0.18
+version 0.19
 
 =head1 SYNOPSIS
 
