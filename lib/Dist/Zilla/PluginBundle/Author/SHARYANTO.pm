@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.17'; # VERSION
+our $VERSION = '0.18'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -30,7 +30,7 @@ sub configure {
 
         [InstallRelease => {install_command => 'cpanm -n .'}],
         # to help make sure that I have the latest plugins
-        ['Run::BeforeBuild' => {run => 'norepeat -p daily -- cpanm -n --reinstall Dist::Zilla::PluginBundle::Author::SHARYANTO Pod::Weaver::PluginBundle::Author::SHARYANTO'}],
+        ['Run::BeforeBuild' => {run => 'exec-if-env OFFLINE norepeat -p daily -- cpanm -n --reinstall Dist::Zilla::PluginBundle::Author::SHARYANTO Pod::Weaver::PluginBundle::Author::SHARYANTO'}],
         ['Run::Release' => {run => 'archive-perl-release %s'}],
     );
 }
@@ -52,7 +52,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like SHARYANTO when y
 
 =head1 VERSION
 
-version 0.17
+version 0.18
 
 =head1 SYNOPSIS
 
@@ -76,11 +76,6 @@ I install my dists after release (the eat-your-own-dog-food principle). I also
 archive them using a script called C<archive-perl-release>. This is currently a
 script on my computer, you can get them from my 'scripts' github repo but this
 is optional and the release process won't fail if the script does not exist.
-
-=head1 FUNCTIONS
-
-
-None are exported by default, but they are exportable.
 
 =for Pod::Coverage ^(configure)$
 

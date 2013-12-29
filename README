@@ -3,7 +3,7 @@ NAME
     SHARYANTO when you build your dists
 
 VERSION
-    version 0.17
+    version 0.18
 
 SYNOPSIS
      # dist.ini
@@ -26,9 +26,6 @@ DESCRIPTION
     is currently a script on my computer, you can get them from my 'scripts'
     github repo but this is optional and the release process won't fail if
     the script does not exist.
-
-FUNCTIONS
-    None are exported by default, but they are exportable.
 
 HOMEPAGE
     Please visit the project's homepage at
