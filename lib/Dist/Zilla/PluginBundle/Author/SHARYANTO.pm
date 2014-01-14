@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.19'; # VERSION
+our $VERSION = '0.20'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -28,10 +28,9 @@ sub configure {
         'Test::Compile',
         'Test::Rinci',
 
-        [InstallRelease => {install_command => 'cpanm -n .'}],
         # to help make sure that I have the latest plugins
         ['Run::BeforeBuild' => {run => 'exec-if-not-env OFFLINE norepeat -p daily -- cpanm -n --reinstall Dist::Zilla::PluginBundle::Author::SHARYANTO Pod::Weaver::PluginBundle::Author::SHARYANTO'}],
-        ['Run::Release' => {run => 'archive-perl-release %s'}],
+        ['Run::Release' => {run => 'archive-perl-release %s' . ($ENV{INSTALL} // 1 ? " && cpanm %s" : "")}],
     );
 }
 
@@ -52,7 +51,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like SHARYANTO when y
 
 =head1 VERSION
 
-version 0.19
+version 0.20
 
 =head1 SYNOPSIS
 
@@ -72,10 +71,11 @@ file).
 I still maintain dependencies and increase version number manually (so no
 AutoVersion and AutoPrereqs).
 
-I install my dists after release (the eat-your-own-dog-food principle). I also
-archive them using a script called C<archive-perl-release>. This is currently a
-script on my computer, you can get them from my 'scripts' github repo but this
-is optional and the release process won't fail if the script does not exist.
+I install my dists after release (the eat-your-own-dog-food principle), except
+when INSTALL=0 environment is specified. I also archive them using a script
+called C<archive-perl-release>. This is currently a script on my computer, you
+can get them from my 'scripts' github repo but this is optional and the release
+process won't fail if the script does not exist.
 
 =for Pod::Coverage ^(configure)$
 
@@ -101,7 +101,7 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Steven Haryanto.
+This software is copyright (c) 2014 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

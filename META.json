@@ -36,7 +36,6 @@
             "Dist::Zilla::Plugin::CheckChangeLog" : "0",
             "Dist::Zilla::Plugin::CheckMetaResources" : "0",
             "Dist::Zilla::Plugin::Extras" : "0",
-            "Dist::Zilla::Plugin::InstallRelease" : "0",
             "Dist::Zilla::Plugin::OurPkgVersion" : "0",
             "Dist::Zilla::Plugin::PodWeaver" : "0",
             "Dist::Zilla::Plugin::ReadmeFromPod" : "0",
@@ -68,7 +67,7 @@
          "web" : "https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO"
       }
    },
-   "version" : "0.19",
+   "version" : "0.20",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018001"
