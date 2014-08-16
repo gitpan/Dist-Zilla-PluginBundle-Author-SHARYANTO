@@ -3,7 +3,9 @@ NAME
     SHARYANTO when you build your dists
 
 VERSION
-    version 0.25
+    This document describes version 0.26 of
+    Dist::Zilla::PluginBundle::Author::SHARYANTO (from Perl distribution
+    Dist-Zilla-PluginBundle-Author-SHARYANTO), released on 2014-08-16.
 
 SYNOPSIS
      # dist.ini

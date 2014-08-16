@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.25'; # VERSION
+our $VERSION = '0.26'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -26,6 +26,7 @@ sub configure {
         ['PruneFiles' => {match => ['~$']}],
         'ReadmeFromPod',
         'Rinci::Validate',
+        'SetScriptShebang',
         'SHARYANTO::OurPkgVersion',
         'Test::Compile',
         'Test::Rinci',
@@ -49,7 +50,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO - Dist::Zilla like SHARYANTO when y
 
 =head1 VERSION
 
-version 0.25
+This document describes version 0.26 of Dist::Zilla::PluginBundle::Author::SHARYANTO (from Perl distribution Dist-Zilla-PluginBundle-Author-SHARYANTO), released on 2014-08-16.
 
 =head1 SYNOPSIS
 

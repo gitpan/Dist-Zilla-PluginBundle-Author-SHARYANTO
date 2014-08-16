@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::Author::SHARYANTO::Task;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.25'; # VERSION
+our $VERSION = '0.26'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -37,7 +37,7 @@ Dist::Zilla::PluginBundle::Author::SHARYANTO::Task - Dist::Zilla like SHARYANTO 
 
 =head1 VERSION
 
-version 0.25
+This document describes version 0.26 of Dist::Zilla::PluginBundle::Author::SHARYANTO::Task (from Perl distribution Dist-Zilla-PluginBundle-Author-SHARYANTO), released on 2014-08-16.
 
 =head1 SYNOPSIS
 

@@ -32,6 +32,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::ReadmeFromPod" => 0,
     "Dist::Zilla::Plugin::Rinci::Validate" => "0.01",
     "Dist::Zilla::Plugin::SHARYANTO::OurPkgVersion" => 0,
+    "Dist::Zilla::Plugin::SetScriptShebang" => 0,
     "Dist::Zilla::Plugin::TaskWeaver" => 0,
     "Dist::Zilla::Plugin::Test::Compile" => "2.033",
     "Dist::Zilla::Plugin::Test::Rinci" => "0.01"
@@ -42,7 +43,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.25",
+  "VERSION" => "0.26",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -61,6 +62,7 @@ my %FallbackPrereqs = (
   "Dist::Zilla::Plugin::ReadmeFromPod" => 0,
   "Dist::Zilla::Plugin::Rinci::Validate" => "0.01",
   "Dist::Zilla::Plugin::SHARYANTO::OurPkgVersion" => 0,
+  "Dist::Zilla::Plugin::SetScriptShebang" => 0,
   "Dist::Zilla::Plugin::TaskWeaver" => 0,
   "Dist::Zilla::Plugin::Test::Compile" => "2.033",
   "Dist::Zilla::Plugin::Test::Rinci" => "0.01",

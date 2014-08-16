@@ -40,6 +40,7 @@
             "Dist::Zilla::Plugin::ReadmeFromPod" : "0",
             "Dist::Zilla::Plugin::Rinci::Validate" : "0.01",
             "Dist::Zilla::Plugin::SHARYANTO::OurPkgVersion" : "0",
+            "Dist::Zilla::Plugin::SetScriptShebang" : "0",
             "Dist::Zilla::Plugin::TaskWeaver" : "0",
             "Dist::Zilla::Plugin::Test::Compile" : "2.033",
             "Dist::Zilla::Plugin::Test::Rinci" : "0.01"
@@ -66,10 +67,10 @@
          "web" : "https://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-Author-SHARYANTO"
       }
    },
-   "version" : "0.25",
+   "version" : "0.26",
    "x_Dist_Zilla" : {
       "perl" : {
-         "version" : "5.018002"
+         "version" : "5.018001"
       },
       "plugins" : [
          {
@@ -173,9 +174,9 @@
             "version" : "5.015"
          },
          {
-            "class" : "Dist::Zilla::Plugin::SHARYANTO::OurPkgVersion",
-            "name" : "@Author::SHARYANTO/SHARYANTO::OurPkgVersion",
-            "version" : "0.02"
+            "class" : "Dist::Zilla::Plugin::OurDate",
+            "name" : "@Author::SHARYANTO/OurDate",
+            "version" : "0.01"
          },
          {
             "class" : "Dist::Zilla::Plugin::PodWeaver",
@@ -244,7 +245,7 @@
                      {
                         "class" : "Pod::Weaver::Plugin::Perinci",
                         "name" : "@Author::SHARYANTO/Perinci",
-                        "version" : "0.14"
+                        "version" : "0.15"
                      },
                      {
                         "class" : "Pod::Weaver::Section::Leftovers",
@@ -310,7 +311,12 @@
          {
             "class" : "Dist::Zilla::Plugin::Rinci::Validate",
             "name" : "@Author::SHARYANTO/Rinci::Validate",
-            "version" : "0.12"
+            "version" : "0.13"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::SHARYANTO::OurPkgVersion",
+            "name" : "@Author::SHARYANTO/SHARYANTO::OurPkgVersion",
+            "version" : "0.02"
          },
          {
             "class" : "Dist::Zilla::Plugin::Test::Compile",
@@ -326,7 +332,7 @@
                }
             },
             "name" : "@Author::SHARYANTO/Test::Compile",
-            "version" : "2.040"
+            "version" : "2.039"
          },
          {
             "class" : "Dist::Zilla::Plugin::Test::Rinci",
